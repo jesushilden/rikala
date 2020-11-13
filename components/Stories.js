@@ -1,7 +1,7 @@
 import styles from '../styles/Stories.module.css'
 
 const Stories = () =>  {
-    return <div></div>
+    return <div>Stories</div>
   }
   
   export default Stories
