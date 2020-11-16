@@ -1,12 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Header from '../components/Header'
-import About from '../components/About'
-import Process from '../components/Process'
-import Sold from '../components/Sold'
-import Social from '../components/Social'
-import Contact from '../components/Contact'
-import Stories from '../components/Stories'
+import Header from '../components/Header/Header'
+import About from '../components/About/About'
+import Process from '../components/Process/Process'
+import Sold from '../components/Sold/Sold'
+import Contact from '../components/Contact/Contact'
+import Stories from '../components//Stories/Stories'
 import contentfulService from '../utils/contentfulService'
 
 export default function Home(props) {
@@ -26,7 +25,6 @@ export default function Home(props) {
           <div className={styles.contentBlock}><About /></div>
           <div className={styles.contentBlock}><Process /></div>
           <div className={styles.contentBlock}><Sold /></div>
-          <div className={styles.contentBlock}><Social /></div>
           <div className={styles.contentBlock}><Contact /></div>
           <div className={styles.contentBlock}><Stories /></div>
         </div>
