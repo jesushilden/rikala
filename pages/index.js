@@ -7,6 +7,7 @@ import Sold from '../components/Sold/Sold'
 import Contact from '../components/Contact/Contact'
 import Stories from '../components//Stories/Stories'
 import contentfulService from '../utils/contentfulService'
+import Navbar from '../components/Navbar/Navbar'
 
 export default function Home(props) {
   console.log(props)
@@ -18,6 +19,7 @@ export default function Home(props) {
       </Head>
 
       <main className={styles.main}>
+        <Navbar />
         <div className={styles.page}>
           <div className={styles.contentBlock}>
             <Header header={props.header} />
