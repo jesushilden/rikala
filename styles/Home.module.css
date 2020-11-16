@@ -1,6 +1,18 @@
+@font-face {
+    font-family: 'FuturaStd';
+    src: local('FuturaStd'), url(../utils/fonts/FuturaStd-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: local('BebasNeue'), url(../utils/fonts/BebasNeue.otf) format('opentype');
+}
+
 .main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    font-family: 'FuturaStd';
 }
 
 .page {
