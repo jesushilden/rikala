@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    background: white;
+}
+
+.logo {
+    margin: 0px 20px;
+    font-family: 'BebasNeue';
+    font-size: 25px;
+    color: #24293A;
+}
+
+.navigationList {
+    display: flex;
+    margin: 0px 20px;
+}
+
+.listItem {
+    margin: 0px 8px;
+    cursor: pointer;
+}
+
+.navigationButton {
+    display: none;
+    font-size: 25px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .navigationList {
+        display: none;
+    }
+
+    .navigationButton {
+        display: flex;
+    }
+}

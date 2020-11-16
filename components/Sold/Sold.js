@@ -1,4 +1,4 @@
-import styles from '../styles/Sold.module.css'
+import styles from '../../styles/Sold.module.css'
 
 const Sold = () =>  {
     return <div>Sold</div>
