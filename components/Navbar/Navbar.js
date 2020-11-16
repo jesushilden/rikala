@@ -1,3 +1,5 @@
+import { faBars, faCocktail, faHamburger } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../../styles/Navbar.module.css'
 
 const Navbar = () => {
@@ -13,7 +15,7 @@ const Navbar = () => {
                 <div className={styles.listItem}>Ota yhteyttä</div>
             </div>
             <div className={styles.navigationButton}>
-                button
+                <FontAwesomeIcon icon={faBars} />
             </div>
         </div>
     )

@@ -10,7 +10,7 @@
 }
 
 .logo {
-    margin: 0px 10px;
+    margin: 0px 20px;
     font-family: 'BebasNeue';
     font-size: 25px;
 }
@@ -27,9 +27,12 @@
 
 .navigationButton {
     display: none;
+    font-size: 25px;
+    margin: 0px 20px;
+    cursor: pointer;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 700px) {
     .navigationList {
         display: none;
     }
