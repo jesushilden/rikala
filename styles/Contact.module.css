@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    flex: 1;
+    color: navy;
+    font-size: xx-large;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.inputWrapper {
+    display: flex;
+    flex: 1;
+    border-bottom: 2px solid navy;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.textInput {
+    flex: 1;
+    font-size: large;
+    color: navy;
+}
+
+.submitButton {
+    height: 60px;
+    background-color: navy;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    cursor: pointer;
+}
