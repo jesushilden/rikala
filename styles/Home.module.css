@@ -10,7 +10,7 @@
 
 .main {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
     font-family: 'FuturaStd';
 }
@@ -18,7 +18,8 @@
 .page {
     flex: 1;
     flex-direction: column;
-    max-width: 1024px;
+    width: 100%;
+    max-width: 2024px;
 }
 
 .contentBlock {
