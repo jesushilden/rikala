@@ -5,30 +5,58 @@
 
 .label {
     flex: 1;
-    color: navy;
+    color: #24293A;
     font-size: xx-large;
     margin-bottom: 25px;
     font-weight: bold;
     text-align: center;
 }
 
+.sublabel {
+    flex: 1;
+    color: #B9B5AE;
+    font-size: large;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.oklogo {
+    color: #24293A;
+    text-align: center;
+    font-size: xx-large;
+}
+
 .inputWrapper {
     display: flex;
+    flex-direction: column;
     flex: 1;
-    border-bottom: 1px solid navy;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
 }
 
 .textInput {
     flex: 1;
     font-size: large;
-    color: navy;
+    color: #24293A;
+    border-bottom: 1px solid #24293A;
+    padding-bottom: 10px;
+}
+
+.textInput::placeholder {
+    color: #B9B5AE;
+}
+
+.textInputError {
+    border-bottom: 1px solid #F95D51;
+}
+
+.errorMessage {
+    color: #F95D51;
+    font-size: small;
+    height: 30px;
 }
 
 .submitButton {
     height: 60px;
-    background-color: navy;
+    background-color: #24293A;
     color: white;
     font-size: large;
     font-weight: bold;
