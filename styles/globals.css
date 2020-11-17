@@ -14,3 +14,18 @@ a {
 * {
   box-sizing: border-box;
 }
+
+input {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  font: inherit;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  font: inherit;
+  resize: none;
+}
