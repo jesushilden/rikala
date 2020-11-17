@@ -15,7 +15,7 @@
 .inputWrapper {
     display: flex;
     flex: 1;
-    border-bottom: 2px solid navy;
+    border-bottom: 1px solid navy;
     margin-bottom: 30px;
     padding-bottom: 10px;
 }

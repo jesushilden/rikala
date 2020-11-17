@@ -20,7 +20,13 @@ const Contact = () => {
       email,
       message
     })
+
     await fetch('/api/email', { method: 'POST', body: body })
+
+    setName('')
+    setPhone('')
+    setEmail('')
+    setMessage('')
   }
 
 
