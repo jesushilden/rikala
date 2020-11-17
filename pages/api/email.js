@@ -12,8 +12,8 @@ export default async (req, res) => {
   const { name, email, phone, message } = JSON.parse(req.body)
 
   const content = {
-    to: process.env.EMAIL,
-    from: process.env.EMAIL,
+    to: process.env.TO_EMAIL,
+    from: process.env.FROM_EMAIL,
     replyTo: email,
     subject: `Uusi viesti henkilöltä ${name}`,
     text: message,
