@@ -7,8 +7,10 @@ const Sold = ({ apartments }) => {
       {apartments.map(apartment =>
         <div className={styles.apartment} key={apartment.address}>
           <img className={styles.image} src={apartment.picture}></img>
-          <div>{apartment.address}</div>
-          <div>{apartment.size}</div>
+          <div className={styles.apartmentInfo}>
+            <div>{apartment.address}</div>
+            <div>{apartment.size}</div>
+          </div>
         </div>
       )}
     </div>
