@@ -1,0 +1,46 @@
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: -50px 20px 40px 20px;
+}
+
+.button {
+    margin-left: 20%;
+    padding: 10px;
+    background: #24293A;
+    color: white;
+}
+
+.node {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.line {
+    width: 4px;
+    height: 100%;
+    background: #C3CCDA;
+    margin-left: 20%;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    border: 1px solid #C3CCDA;
+    margin-left: -17px;
+    background: #C3CCDA;
+}
+
+.info {
+    max-width: 500px;
+    margin: 20px 10px;
+    padding: 10px;
+    color: #24293A;
+}

@@ -25,12 +25,20 @@ export default function Home(props) {
             <Header header={props.header} />
           </div>
           <div className={styles.contentBlock}>
+            <Process />
+          </div>
+          <div className={styles.contentBlock}>
             <About about={props.about} />
           </div>
-          <div className={styles.contentBlock}><Process /></div>
-          <div className={styles.contentBlock}><Sold apartments={props.apartments} /></div>
-          <div className={`${styles.contentBlock} ${styles.contentBlockDark}`}><Stories stories={props.stories} /></div>
-          <div className={styles.contentBlock}><Contact /></div>
+          <div className={styles.contentBlock}>
+            <Sold apartments={props.apartments} />
+          </div>
+          <div className={`${styles.contentBlock} ${styles.contentBlockDark}`}>
+            <Stories stories={props.stories} />
+          </div>
+          <div className={styles.contentBlock}>
+            <Contact />
+          </div>
         </div>
       </main>
 
