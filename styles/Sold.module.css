@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 40px 15px;
 }
 
 .label {
@@ -13,9 +14,8 @@
 
 .apartmentWrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 15px;
-  margin: 0 15px;
 }
 
 .apartmentInfo {
@@ -23,6 +23,18 @@
   background: #B9B5AE;
   color: white;
   padding: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .apartmentWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .apartmentWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 620px) {

@@ -2,7 +2,7 @@ import styles from '../../styles/Sold.module.css'
 
 const Sold = ({ apartments }) => {
   return <div className={styles.container}>
-    <div className={styles.label}>MYYDYT</div>
+    <div className={styles.label}>MYYDYT HUONEISTOT</div>
     <div className={styles.apartmentWrapper}>
       {apartments.map(apartment =>
         <div className={styles.apartment} key={apartment.address}>
