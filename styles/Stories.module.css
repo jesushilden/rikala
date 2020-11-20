@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 15px;
+  padding: 40px 15px;
+}
+
+.label {
+  color: #24293A;
+  font-size: xx-large;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.storyWrapper {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 60%;
+}
+
+.story {
+  font-style: italic;
+  font-size: large;
+}
+
+.name {
+  font-size: small;
+  color: #B9B5AE;
+}
+
+.quoteIcon {
+  color: #B9B5AE;
+}
+
+@media only screen and (max-width: 1200px) {
+  .storyWrapper {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .storyWrapper {
+    max-width: 100%;
+  }
+}

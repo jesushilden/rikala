@@ -29,8 +29,8 @@ export default function Home(props) {
           </div>
           <div className={styles.contentBlock}><Process /></div>
           <div className={styles.contentBlock}><Sold apartments={props.apartments} /></div>
+          <div className={`${styles.contentBlock} ${styles.contentBlockDark}`}><Stories stories={props.stories} /></div>
           <div className={styles.contentBlock}><Contact /></div>
-          <div className={styles.contentBlock}><Stories /></div>
         </div>
       </main>
 
@@ -46,6 +46,7 @@ export const getStaticProps = async () => {
   const about = await contentfulService.getEntrie('1K2OSmNIgXt0PIKlr8b922')
   const process = await contentfulService.getProcessEntries()
   const apartments = await contentfulService.getApartmentEntries()
+  const stories = await contentfulService.getStoryEntries()
 
   const headerPicture = await contentfulService.getAssetUrl(header.fields.picture.sys.id)
 
@@ -54,7 +55,8 @@ export const getStaticProps = async () => {
       header: { ...header, picture: headerPicture },
       about: about,
       process: process,
-      apartments: apartments
+      apartments: apartments,
+      stories: stories
     },
   }
 }
