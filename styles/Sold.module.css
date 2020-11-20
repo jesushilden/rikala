@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 15px;
+}
+
+.label {
+  color: #24293A;
+  font-size: xx-large;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.apartmentWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.apartmentInfo {
+  position: relative;
+  background: #B9B5AE;
+  color: white;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .apartmentWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .apartmentWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .apartmentWrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}

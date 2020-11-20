@@ -17,4 +17,20 @@ const getProcessEntries = async () => {
     return await entryList.json()
 }
 
-export default {getAssetUrl, getEntrie, getProcessEntries}
+const getApartmentEntries = async () => {
+    const apartmentsData = await fetch(`https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?content_type=apartments&access_token=${token}`)
+
+    const apartmentsJson = await apartmentsData.json()
+
+    const apartments = apartmentsJson.items.map(entry => {
+        const asset = apartmentsJson.includes.Asset.find(asset => asset.sys.id === entry.fields.picture.sys.id)
+        return {
+            ...entry.fields,
+            picture: asset.fields.file.url
+        }
+    })
+
+    return apartments
+}
+
+export default { getAssetUrl, getEntrie, getProcessEntries, getApartmentEntries }
