@@ -33,4 +33,14 @@ const getApartmentEntries = async () => {
     return apartments
 }
 
-export default { getAssetUrl, getEntrie, getProcessEntries, getApartmentEntries }
+const getStoryEntries = async () => {
+    const storiesData = await fetch(`https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?content_type=stories&access_token=${token}`)
+
+    const storiesJson = await storiesData.json()
+
+    const stories = storiesJson.items.map(story => story.fields)
+
+    return stories
+}
+
+export default { getAssetUrl, getEntrie, getProcessEntries, getApartmentEntries, getStoryEntries }

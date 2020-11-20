@@ -26,5 +26,9 @@
     flex: 1;
 }
 
+.contentBlockDark {
+    background-color: #B9B5AE;
+}
+
 @media (max-width: 1024px) {
 }
