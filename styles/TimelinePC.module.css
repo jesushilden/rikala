@@ -1,0 +1,95 @@
+.node {
+    display: flex;
+    min-height: 40vh;
+}
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.centerColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 60px;
+}
+
+.textColumn {
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.line {
+    width: 4px;
+    background: #C3CCDA;
+    height: 100%;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: #BAA88A;
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    border: 4px solid #C3CCDA;
+    position: absolute;
+    background: white;
+}
+
+.image {
+    width: 400px;
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info {
+    max-width: 500px;
+    color: #24293A;
+    text-align: center;
+}
+
+.title {
+    font-family: 'BebasNeue';
+    font-size: x-large;
+}
+
+.button {
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    background: #24293A;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+}
+
+.endNode {
+    display: flex;
+    min-height: 20vh;
+}
+
+.centerEndColumn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0px 60px;
+}
