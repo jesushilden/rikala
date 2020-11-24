@@ -1,11 +1,13 @@
 import styles from '../../styles/TimelinePC.module.css'
 import { faChartBar, faPhotoVideo, faSignature, faTrophy, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect } from 'react'
 
-const TimelinePC = () => {
+const TimelinePC = ({ process }) => {
 
   useEffect(() => {
+    console.log(process)
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, [])
@@ -30,6 +32,10 @@ const TimelinePC = () => {
     }
   }
 
+  const getStepByOrder = (order) => {
+    return process.items.find(item => item.fields.order === order)
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.button}>
@@ -45,14 +51,14 @@ const TimelinePC = () => {
           <div className={styles.circle}><FontAwesomeIcon icon={faPhotoVideo} /></div>
         </div>
         <div className={`${styles.rightColumn} ${styles.textColumn}`} id="node1">
-          <div className={styles.title}> Valmistelu </div>
-          <div className={styles.info}>Suomessa prosentissa asunnoista ei ole suihkua ja 0,8 % asunnoista ei sisällä sisävessaa.</div>
+          <div className={styles.title}>{getStepByOrder(1).fields.name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(1).fields.description) }}></div>
         </div>
       </div>
       <div className={styles.node}>
         <div className={`${styles.leftColumn} ${styles.textColumn}`} id="node2">
-          <div className={styles.title}> Julkaisu & markkinointi </div>
-          <div className={styles.info}>Suomessa asunnot luokitellaan käyttötavan mukaan jatkuvaan asuinkäyttöön tarkoitetuiksi tai vapaa-ajan asunnoiksi. Asuntoon liittyvät määritykset on koottu lähinnä Suomen rakentamismääräyskokoelman osaan Asuntosuunnittelu (G1).</div>
+          <div className={styles.title}>{getStepByOrder(2).fields.name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(2).fields.description) }}></div>
         </div>
         <div className={styles.centerColumn}>
           <div className={styles.line}></div>
@@ -71,14 +77,14 @@ const TimelinePC = () => {
           <div className={styles.circle}><FontAwesomeIcon icon={faUsers} /></div>
         </div>
         <div className={`${styles.rightColumn} ${styles.textColumn}`} id="node3">
-          <div className={styles.title}> Näytöt </div>
-          <div className={styles.info}>Nykyisin yhä useampi ihminen asuu kaupungeissa tai niiden laitamilla. Asumisen siirtyminen maaseudulta kaupunkeihin, kaupungistuminen, on maailmanlaajuinen ilmiö.</div>
+          <div className={styles.title}>{getStepByOrder(3).fields.name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(3).fields.description) }}></div>
         </div>
       </div>
       <div className={styles.node}>
         <div className={`${styles.leftColumn} ${styles.textColumn}`} id="node4">
-          <div className={styles.title}> Tarjousneuvottelut </div>
-          <div className={styles.info}>Vuonna 2009 Suomessa asuinkerrostaloissa asui 32,7 % asuntokunnista, omakotitaloissa 47 % ja rivitaloissa 19,8 %.</div>
+          <div className={styles.title}>{getStepByOrder(4).fields.name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(4).fields.description) }}></div>
         </div>
         <div className={styles.centerColumn}>
           <div className={styles.line}></div>

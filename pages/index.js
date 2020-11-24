@@ -25,7 +25,7 @@ export default function Home(props) {
             <Header header={props.header} />
           </div>
           <div className={styles.contentBlock}>
-            <Process />
+            <Process process={props.process}/>
           </div>
           <div className={styles.contentBlock}>
             <About about={props.about} />

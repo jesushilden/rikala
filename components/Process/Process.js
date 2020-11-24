@@ -3,7 +3,7 @@ import TimelinePC from './TimelinePC'
 import TimelineMobile from './TimelineMobile'
 import { useEffect, useState } from 'react'
 
-const Process = () => {
+const Process = ({ process }) => {
 
   const [isMobile, setDevice] = useState(false)
 
@@ -15,12 +15,14 @@ const Process = () => {
 
   function onResize() {
     setDevice(window.innerWidth < 1050)
-    console.log(isMobile)
   }
 
   return (
     <div className={styles.container}>
-      {isMobile ? <TimelineMobile /> : <TimelinePC />}
+      {isMobile ? 
+      <TimelineMobile process={process}/> 
+      : 
+      <TimelinePC process={process}/>}
     </div>
   )
 }

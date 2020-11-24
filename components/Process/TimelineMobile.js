@@ -1,9 +1,10 @@
 import styles from '../../styles/TimelineMobile.module.css'
 import { faChartBar, faPhotoVideo, faSignature, faTrophy, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect } from 'react'
 
-const TimelinePC = () => {
+const TimelineMobile = ({ process }) => {
 
   useEffect(() => {
     window.addEventListener('scroll', onScroll);
@@ -30,6 +31,10 @@ const TimelinePC = () => {
     }
   }
 
+  const getStepByOrder = (order) => {
+    return process.items.find(item => item.fields.order === order)
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.button}>
@@ -41,8 +46,8 @@ const TimelinePC = () => {
           <div className={styles.circle}><FontAwesomeIcon icon={faPhotoVideo} /></div>
         </div>
         <div className={`${styles.rightColumn} ${styles.textColumn}`} id="node1">
-          <div className={styles.title}> Valmistelu </div>
-          <div className={styles.info}>Suomessa prosentissa asunnoista ei ole suihkua ja 0,8 % asunnoista ei sisällä sisävessaa.</div>
+          <div className={styles.title}>{getStepByOrder(1).fields.name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(1).fields.description) }}></div>
         </div>
       </div>
       <div className={styles.node}>
@@ -51,8 +56,8 @@ const TimelinePC = () => {
           <div className={styles.circle}><FontAwesomeIcon icon={faChartBar} /></div>
         </div>
         <div className={`${styles.rightColumn} ${styles.textColumn}`} id="node2">
-        <div className={styles.title}> Valmistelu </div>
-          <div className={styles.info}>Suomessa prosentissa asunnoista ei ole suihkua ja 0,8 % asunnoista ei sisällä sisävessaa.</div>
+          <div className={styles.title}>{getStepByOrder(2).fields.name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(2).fields.description) }}></div>
         </div>
       </div>
       <div className={styles.node}>
@@ -61,8 +66,8 @@ const TimelinePC = () => {
           <div className={styles.circle}><FontAwesomeIcon icon={faUsers} /></div>
         </div>
         <div className={`${styles.rightColumn} ${styles.textColumn}`} id="node3">
-          <div className={styles.title}> Näytöt </div>
-          <div className={styles.info}>Nykyisin yhä useampi ihminen asuu kaupungeissa tai niiden laitamilla. Asumisen siirtyminen maaseudulta kaupunkeihin, kaupungistuminen, on maailmanlaajuinen ilmiö.</div>
+          <div className={styles.title}>{getStepByOrder(3).fields.name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(3).fields.description) }}></div>
         </div>
       </div>
       <div className={styles.node}>
@@ -71,8 +76,9 @@ const TimelinePC = () => {
           <div className={styles.circle}><FontAwesomeIcon icon={faSignature} /></div>
         </div>
         <div className={`${styles.rightColumn} ${styles.textColumn}`} id="node4">
-        <div className={styles.title}> Valmistelu </div>
-          <div className={styles.info}>Suomessa prosentissa asunnoista ei ole suihkua ja 0,8 % asunnoista ei sisällä sisävessaa.</div>        </div>
+          <div className={styles.title}>{getStepByOrder(4).fields.name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(4).fields.description) }}></div>
+        </div>
       </div>
       <div className={styles.endNode}>
         <div className={styles.leftColumn}>
@@ -88,4 +94,4 @@ const TimelinePC = () => {
   )
 }
 
-export default TimelinePC
+export default TimelineMobile
