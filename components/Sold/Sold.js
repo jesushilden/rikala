@@ -8,8 +8,8 @@ const Sold = ({ apartments }) => {
         <div className={styles.apartment} key={apartment.address}>
           <img className={styles.image} src={apartment.picture}></img>
           <div className={styles.apartmentInfo}>
-            <div>{apartment.address}</div>
-            <div>{apartment.size}</div>
+            <div className={styles.address}>{apartment.address}</div>
+            <div className={styles.size}>{apartment.size} m<sup className={styles.powerof}>2</sup></div>
           </div>
         </div>
       )}
