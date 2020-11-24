@@ -14,8 +14,8 @@
 
 .apartmentWrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
 }
 
 .apartmentInfo {
@@ -25,25 +25,37 @@
   padding: 10px;
 }
 
-@media only screen and (max-width: 1200px) {
-  .apartmentWrapper {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+.address {
+  font-size: large;
 }
 
-@media only screen and (max-width: 992px) {
+.powerof {
+  font-size: xx-small;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
   .apartmentWrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 992px) {
   .apartmentWrapper {
     grid-template-columns: 1fr;
   }
+
+  .image {
+    height: 300px;
+  }
 }
 
-.image {
-  max-width: 100%;
-  max-height: 100%;
+@media only screen and (max-width: 600px) {
+  .image {
+    height: 200px;
+  }
 }
