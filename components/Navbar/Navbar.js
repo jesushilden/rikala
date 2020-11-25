@@ -24,7 +24,7 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faBars} />
                 }
             </div>
-            <Slider open={open} />
+            <Slider open={open} setOpen={setOpen}/>
         </div>
     )
 }

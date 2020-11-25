@@ -54,4 +54,17 @@
     .mikosSpace {
         flex: 0;
     }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        background: rgba(0,0,0,0);
+        height: 90vh;
+        padding-top: 120px;
+    }
+
+    .title {
+        flex: 1;
+        text-align: center;
+    }
 }

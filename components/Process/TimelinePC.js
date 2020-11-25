@@ -7,7 +7,6 @@ import { useEffect } from 'react'
 const TimelinePC = ({ process }) => {
 
   useEffect(() => {
-    console.log(process)
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, [])
@@ -38,9 +37,11 @@ const TimelinePC = ({ process }) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.button}>
-        Ota yhteyttä
+      <a href="#yhteystiedot">
+        <div className={styles.button}>
+          Ota yhteyttä
       </div>
+      </a>
       <div className={styles.node}>
         <div className={styles.leftColumn}>
           <div className={styles.image} style={{ backgroundImage: `url(https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)` }} >

@@ -58,13 +58,19 @@
 }
 
 .button {
-    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 60px;
     text-align: center;
     padding: 10px;
-    background: #24293A;
-    color: white;
+    border: 4px solid #C3CCDA;
+    background: white;
+    color: #24293A;
     cursor: pointer;
     font-size: large;
+    border-radius: 50px;
 }
 
 .endNode {

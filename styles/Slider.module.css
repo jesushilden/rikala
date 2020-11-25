@@ -3,7 +3,7 @@
     position: fixed;
     width: 100vw;
     top: 70px;
-    transition: left 0.5s;
+    transition: left 0.3s;
     background: rgba(255,255,255,0.9);
     height: 100%;
 }
@@ -14,7 +14,7 @@
 
 .listItem {
     font-size: x-large;
-    margin: 15px 0px;
+    margin: 25px 0px;
     cursor: pointer;
     color: #24293A;
 }

@@ -37,9 +37,11 @@ const TimelineMobile = ({ process }) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.button}>
-        Ota yhteyttä
-      </div>
+      <a href="#yhteystiedot">
+        <div className={styles.button}>
+          Ota yhteyttä
+        </div>
+      </a>
       <div className={styles.node}>
         <div className={styles.centerColumn}>
           <div className={styles.line}></div>
