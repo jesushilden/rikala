@@ -2,7 +2,7 @@
     height: 90vh;
     display: flex;
     flex: 1;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
@@ -21,6 +21,12 @@
     align-items: center;
 }
 
+.card {
+    background: #EFEFEF;
+    padding: 20px;
+    border-radius: 5px;
+}
+
 .title {
     color: #24293A;
     font-size: xxx-large;
@@ -29,4 +35,23 @@
 .text {
     color: #BAA88A;
     font-size: large;
+}
+
+.text p {
+    margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        background-position: 92%;
+    }
+    
+    .information {
+      justify-content: flex-end;
+      margin-bottom: 50px;
+    }
+
+    .mikosSpace {
+        flex: 0;
+    }
 }
