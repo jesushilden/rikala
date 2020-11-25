@@ -58,4 +58,8 @@
     .content {
         flex-direction: column;
     }
+
+    .presentation {
+        padding: 0px;
+    }
 }

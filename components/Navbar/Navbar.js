@@ -11,20 +11,20 @@ const Navbar = () => {
         <div className={styles.container}>
             <div className={styles.logo}>Miko Rikala</div>
             <div className={styles.navigationList}>
-                <div className={styles.listItem}>Myyntiprosessi</div>
-                <div className={styles.listItem}>Minusta</div>
-                <div className={styles.listItem}>Myydyt</div>
-                <div className={styles.listItem}>Asiakaskokemukset</div>
-                <div className={styles.listItem}>Ota yhteyttä</div>
+                <a href={`#prosessi`}><div className={styles.listItem}>Myyntiprosessi</div></a>
+                <a href={`#kuka`}><div className={styles.listItem}>Minusta</div></a>
+                <a href={`#myydyt`}><div className={styles.listItem}>Myydyt</div></a>
+                <a href={`#palaute`}><div className={styles.listItem}>Asiakaskokemukset</div></a>
+                <a href={`#yhteystiedot`}><div className={styles.listItem}>Ota yhteyttä</div></a>
             </div>
             <div className={styles.navigationButton} onClick={() => setOpen(!open)}>
-                {open?
+                {open ?
                     <FontAwesomeIcon icon={faTimes} />
                     :
                     <FontAwesomeIcon icon={faBars} />
                 }
             </div>
-            <Slider open={open}/>
+            <Slider open={open} />
         </div>
     )
 }

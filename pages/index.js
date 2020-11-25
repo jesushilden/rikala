@@ -21,22 +21,22 @@ export default function Home(props) {
       <main className={styles.main}>
         <Navbar />
         <div className={styles.page}>
-          <div className={styles.contentBlock}>
+          <div className={styles.contentBlock} id="otsiko">
             <Header header={props.header} />
           </div>
-          <div className={styles.contentBlock}>
+          <div className={styles.contentBlock} id="prosessi"> 
             <Process process={props.process}/>
           </div>
-          <div className={styles.contentBlock}>
+          <div className={styles.contentBlock} id="kuka">
             <About about={props.about} />
           </div>
-          <div className={styles.contentBlock}>
+          <div className={styles.contentBlock} id="myydyt">
             <Sold apartments={props.apartments} />
           </div>
-          <div className={`${styles.contentBlock} ${styles.contentBlockDark}`}>
+          <div className={`${styles.contentBlock} ${styles.contentBlockDark}`} id="palaute">
             <Stories stories={props.stories} />
           </div>
-          <div className={styles.contentBlock}>
+          <div className={styles.contentBlock} id="yhteystiedot">
             <Contact />
           </div>
         </div>
