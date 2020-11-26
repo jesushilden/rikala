@@ -6,10 +6,8 @@ const Header = ({ header }) => {
   return (
     <div className={styles.container} style={{ backgroundImage: `url(${header.picture})` }}>
       <div className={styles.information}>
-        <div className={styles.card}>
-          <div className={styles.title}>{header.fields.name}</div>
-          <div className={styles.text} dangerouslySetInnerHTML={{ __html: documentToHtmlString(header.fields.description) }}></div>
-        </div>
+        <div className={styles.text} dangerouslySetInnerHTML={{ __html: documentToHtmlString(header.fields.description) }}></div>
+        <div className={styles.title}>{header.fields.name}</div>
       </div>
       <div className={styles.mikosSpace}>
       </div>
