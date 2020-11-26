@@ -15,7 +15,7 @@
 
 .apartmentWrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
 }
 
@@ -41,13 +41,17 @@
 
 @media only screen and (max-width: 1200px) {
   .apartmentWrapper {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .image {
+    height: 400px;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .apartmentWrapper {
-    grid-template-columns: 1fr;
+  .container {
+    margin: 40px 10px;
   }
 
   .image {
@@ -56,9 +60,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .container {
-    margin: 40px 10px;
-  }
 
   .image {
     height: 200px;
