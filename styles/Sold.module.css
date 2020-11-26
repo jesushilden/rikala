@@ -3,7 +3,8 @@
   flex: 1;
   flex-direction: column;
   align-items: center;
-  margin: 10vh 15vw;
+  margin: 0px 15vw;
+  padding: 10vh 0px;
 }
 
 .label {
@@ -39,6 +40,11 @@
   width: 100%;
 }
 
+.idAnchor {
+  position: absolute;
+  margin-top: -100px;
+}
+
 @media only screen and (max-width: 1200px) {
   .apartmentWrapper {
     grid-template-columns: 1fr;
@@ -51,7 +57,8 @@
 
 @media only screen and (max-width: 992px) {
   .container {
-    margin: 40px 10px;
+    padding: 5vh 0px;
+    margin: 0px 10px;
   }
 
   .image {
@@ -60,7 +67,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-
   .image {
     height: 200px;
   }

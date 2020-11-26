@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10vh 15vw;
+    margin: 0vh 15vw;
+    padding: 10vh 0px;
 }
 
 .label {
@@ -66,6 +67,11 @@
     vertical-align: middle;
     line-height: 60px;
     cursor: pointer;
+}
+
+.idAnchor {
+    position: absolute;
+    margin-top: -100px;
 }
 
 @media only screen and (max-width: 1200px) {

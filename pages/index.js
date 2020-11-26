@@ -21,22 +21,22 @@ export default function Home(props) {
       <main className={styles.main}>
         <Navbar />
         <div className={styles.page}>
-          <div className={styles.contentBlock} id="otsiko">
+          <div className={styles.contentBlock}>
             <Header header={props.header} />
           </div>
-          <div className={styles.contentBlock} id="prosessi"> 
+          <div className={styles.contentBlock}> 
             <Process process={props.process}/>
           </div>
-          <div className={styles.contentBlock} id="kuka">
+          <div className={`${styles.contentBlock} ${styles.contentBlockDark}`}>
             <About about={props.about} />
           </div>
-          <div className={styles.contentBlock} id="myydyt">
+          <div className={styles.contentBlock}>
             <Sold apartments={props.apartments} />
           </div>
-          <div className={`${styles.contentBlock} ${styles.contentBlockDark}`} id="palaute">
+          <div className={`${styles.contentBlock} ${styles.contentBlockDark}`}>
             <Stories stories={props.stories} />
           </div>
-          <div className={styles.contentBlock} id="yhteystiedot">
+          <div className={styles.contentBlock}>
             <Contact />
           </div>
         </div>
@@ -57,11 +57,12 @@ export const getStaticProps = async () => {
   const stories = await contentfulService.getStoryEntries()
 
   const headerPicture = await contentfulService.getAssetUrl(header.fields.picture.sys.id)
+  const aboutPicture = await contentfulService.getAssetUrl(about.fields.picture.sys.id)
 
   return {
     props: {
       header: { ...header, picture: headerPicture },
-      about: about,
+      about: {...about, picture: aboutPicture},
       process: process,
       apartments: apartments,
       stories: stories

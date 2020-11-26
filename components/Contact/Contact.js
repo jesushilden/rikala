@@ -83,6 +83,7 @@ const Contact = () => {
 
   if (submitted) {
     return <div className={styles.container}>
+      <span className={styles.idAnchor} id="yhteystiedot"></span>
       <div className={styles.label}>KIITOS YHTEYDENOTOSTA</div>
       <div className={styles.sublabel}>Olen yhteydessä mahdollisimman pian.</div>
       <div className={styles.oklogo}>
@@ -93,6 +94,7 @@ const Contact = () => {
 
 
   return <div className={styles.container}>
+    <span className={styles.idAnchor} id="yhteystiedot"></span>
     <div className={styles.label}>OTA YHTEYTTÄ</div>
     <div className={styles.sublabel}>Varaa arviokäynti. Kysy kohteesta. Vastaan kysymykseen kuin kysymykseen mahdollisimman pian.</div>
     <div className={styles.inputWrapper}>

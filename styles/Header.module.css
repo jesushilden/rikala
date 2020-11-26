@@ -17,20 +17,29 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-left: 15vw;
 }
 
 .title {
-    color: #24293A;
+    color: #BAA88A;
     font-size: xxx-large;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 10px;
+    padding: 10px;
+    background: rgb(36, 41, 58, 0.8);
 }
 
 .text {
-    color: #24293A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #BAA88A;
     font-size: large;
+    background: rgb(36, 41, 58, 0.8);
+    padding: 5px;
 }
 
 .text p {
@@ -56,9 +65,14 @@
     .title {
         flex: 1;
         text-align: center;
+        background: none;
+        margin-top: 0px;
+        color: #24293A;
     }
 
     .text {
         text-align: center;
+        background: none;
+        color: #24293A;
     }
 }

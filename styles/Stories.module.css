@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px 0;
-  padding: 40px 15px;
+  padding: 10vh 0px;
 }
 
 .label {
@@ -33,9 +32,21 @@
   color: #B9B5AE;
 }
 
+.idAnchor {
+  position: absolute;
+  margin-top: -100px;
+}
+
 @media only screen and (max-width: 1200px) {
   .storyWrapper {
     max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    padding: 5vh 0px;
+    margin: 0px 10px;
   }
 }
 

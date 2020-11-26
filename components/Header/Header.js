@@ -5,6 +5,7 @@ const Header = ({ header }) => {
 
   return (
     <div className={styles.container} style={{ backgroundImage: `url(${header.picture})` }}>
+      <span className={styles.idAnchor} id="otsiko"></span>
       <div className={styles.information}>
         <div className={styles.text} dangerouslySetInnerHTML={{ __html: documentToHtmlString(header.fields.description) }}></div>
         <div className={styles.title}>{header.fields.name}</div>

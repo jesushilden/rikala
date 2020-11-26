@@ -3,5 +3,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: -60px 20px 40px 20px;
+    padding: 10vh 0px;
 }
+
+.idAnchor {
+    position: absolute;
+    margin-top: -100px;
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+      padding: 5vh 0px;
+    }
+}
+  

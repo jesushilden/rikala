@@ -2,6 +2,7 @@ import styles from '../../styles/Sold.module.css'
 
 const Sold = ({ apartments }) => {
   return <div className={styles.container}>
+    <span className={styles.idAnchor} id="myydyt"></span>
     <div className={styles.label}>MYYDYT HUONEISTOT</div>
     <div className={styles.apartmentWrapper}>
       {apartments.map(apartment =>

@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10vh 15vw;
+    margin: 0vh 15vw;
+    padding: 10vh 0px;
 }
 
 .content {
@@ -16,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px;
@@ -50,16 +51,30 @@
     text-transform: uppercase;
 }
 
-@media only screen and (max-width: 600px) {
-    .container {
-        margin: 40px 10px;
-    }
+.idAnchor {
+    position: absolute;
+    margin-top: -100px;
+}
 
+@media only screen and (max-width: 992px) {
+    .container {
+      padding: 5vh 0px;
+      margin: 0px 10px;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
     .content {
         flex-direction: column;
     }
 
+    .picture {
+        margin: 0px;
+    }
+
     .presentation {
         padding: 0px;
+        margin: 15px 0px;
+        text-align: center;
     }
 }
