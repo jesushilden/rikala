@@ -13,7 +13,8 @@
 
 @media only screen and (max-width: 992px) {
     .container {
-      padding: 5vh 0px;
+      padding: 5px 20px 5vh 20px;
+      margin: 0px 20px;
     }
 }
   
