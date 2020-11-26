@@ -28,7 +28,7 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 10px;
-    padding: 10px;
+    padding: 10px 25px;
     background: rgb(36, 41, 58, 0.8);
 }
 
@@ -39,7 +39,7 @@
     color: #BAA88A;
     font-size: large;
     background: rgb(36, 41, 58, 0.8);
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 .text p {
