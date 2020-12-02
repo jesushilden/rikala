@@ -21,6 +21,7 @@
     font-size: large;
     margin-bottom: 25px;
     text-align: center;
+    width: 60%;
 }
 
 .oklogo {
@@ -78,10 +79,18 @@
     .inputWrapper {
         width: 80%;
     }
+
+    .sublabel {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 992px) {
     .inputWrapper {
+        width: 100%;
+    }
+
+    .sublabel {
         width: 100%;
     }
 }
