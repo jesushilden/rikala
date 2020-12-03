@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+}
+
+.logo {
+  height: 210px;
+  width: 210px;
+}
+
+.info {
+  margin: 40px;
+}
+
+.label {
+  font-family: 'BebasNeue';
+  font-size: x-large;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .info {
+    text-align: center;
+  }
+}

@@ -1,9 +1,20 @@
 import styles from '../../styles/Sold.module.css'
 
-const Sold = ({ apartments }) => {
+const Sold = ({ apartments, soldAmount }) => {
+
+  const getTodayString = () => {
+    const date = new Date()
+    const year = date.getFullYear()
+    const month = date.getMonth() + 1
+    const day = date.getDate()
+
+    return day + '.' + month + '.' + year
+  }
+
   return <div className={styles.container}>
     <span className={styles.idAnchor} id="myydyt"></span>
-    <div className={styles.label}>MYYDYT HUONEISTOT</div>
+    <div className={styles.label}>{soldAmount} MYYTYÄ ASUNTOA</div>
+    <div className={styles.sublabel}>{getTodayString()} mennessä</div>
     <div className={styles.apartmentWrapper}>
       {apartments.map(apartment =>
         <div className={styles.apartment} key={apartment.address}>

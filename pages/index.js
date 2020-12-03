@@ -8,6 +8,7 @@ import Contact from '../components/Contact/Contact'
 import Stories from '../components//Stories/Stories'
 import contentfulService from '../utils/contentfulService'
 import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
 
 export default function Home(props) {
   console.log(props)
@@ -19,7 +20,7 @@ export default function Home(props) {
       </Head>
 
       <main className={styles.main}>
-        <Navbar />
+        <Navbar logo={props.info.logo}/>
         <div className={styles.page}>
           <div className={styles.contentBlock}>
             <Header header={props.header} />
@@ -31,13 +32,16 @@ export default function Home(props) {
             <About about={props.about} />
           </div>
           <div className={styles.contentBlock}>
-            <Sold apartments={props.apartments} />
+            <Sold apartments={props.apartments} soldAmount={props.info.soldAmount} />
           </div>
           <div className={`${styles.contentBlock} ${styles.contentBlockDark}`}>
             <Stories stories={props.stories} />
           </div>
           <div className={styles.contentBlock}>
             <Contact />
+          </div>
+          <div className={`${styles.contentBlock} ${styles.contentBlockDarkBlue}`}>
+            <Footer info={props.info}/>
           </div>
         </div>
       </main>
@@ -55,7 +59,9 @@ export const getStaticProps = async () => {
   const process = await contentfulService.getProcessEntries()
   const apartments = await contentfulService.getApartmentEntries()
   const stories = await contentfulService.getStoryEntries()
+  const info = await contentfulService.getEntrie('1rCyfuRoJj27hdZoboCcoj')
 
+  const logoUrl = await contentfulService.getAssetUrl(info.fields.logo.sys.id)
   const headerPicture = await contentfulService.getAssetUrl(header.fields.picture.sys.id)
   const aboutPicture = await contentfulService.getAssetUrl(about.fields.picture.sys.id)
 
@@ -65,7 +71,8 @@ export const getStaticProps = async () => {
       about: {...about, picture: aboutPicture},
       process: process,
       apartments: apartments,
-      stories: stories
+      stories: stories,
+      info: {...info.fields, logo: logoUrl }
     },
   }
 }
