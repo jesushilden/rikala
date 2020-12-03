@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10vh 0px;
+    padding: 0px 0px 10vh 0px;
+    margin-top: -10px;
 }
 
 .idAnchor {

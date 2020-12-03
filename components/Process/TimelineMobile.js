@@ -39,7 +39,7 @@ const TimelineMobile = ({ process }) => {
     <div className={styles.container}>
       <a href="#yhteystiedot">
         <div className={styles.button}>
-          Ota yhteyttä
+          Varaa arviokäynti
         </div>
       </a>
       <div className={styles.node}>

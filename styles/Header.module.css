@@ -9,6 +9,11 @@
     margin-top: 70px;
 }
 
+.idAnchor {
+    position: absolute;
+    margin-top: -100px;
+}
+
 .mikosSpace {
     flex: 1;
 }
@@ -16,7 +21,7 @@
 .information {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     margin-left: 15vw;
@@ -27,7 +32,7 @@
     font-size: xxx-large;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px 25px;
     background: rgb(36, 41, 58, 0.8);
 }
@@ -49,7 +54,7 @@
 @media only screen and (max-width: 992px) {
 
     .information {
-        margin-top: 5vh;
+        margin-top: 2vh;
         align-items: center;
         margin-left: unset;
     }
@@ -63,7 +68,6 @@
     }
 
     .title {
-        flex: 1;
         text-align: center;
         background: none;
         margin-top: 0px;
@@ -74,5 +78,6 @@
         text-align: center;
         background: none;
         color: #24293A;
+        flex: 1;
     }
 }

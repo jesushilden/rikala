@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <div className={styles.container}>
-            <img className={styles.logo} src="./roofgroup_logo_text.png"></img>
+            <a href="#otsikko"><img className={styles.logo} src="./roofgroup_logo_text.png"></img></a>
             <div className={styles.navigationList}>
                 <a href={`#kuka`}><div className={styles.listItem}>Kuka on Miko</div></a>
                 <a href={`#myydyt`}><div className={styles.listItem}>Myydyt</div></a>

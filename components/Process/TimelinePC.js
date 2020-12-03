@@ -37,11 +37,20 @@ const TimelinePC = ({ process }) => {
 
   return (
     <div className={styles.container}>
-      <a href="#yhteystiedot">
-        <div className={styles.button}>
-          Ota yhteyttä
+      <div className={styles.startNode}>
+        <div className={styles.leftColumn}>
+        </div>
+        <div className={styles.buttonColumn}>
+          <div className={styles.line}></div>
+          <div className={styles.button}>
+            <a href="#yhteystiedot">
+              Varaa arviokäynti
+              </a>
+          </div>
+        </div>
+        <div className={`${styles.rightColumn} ${styles.textColumn}`}>
+        </div>
       </div>
-      </a>
       <div className={styles.node}>
         <div className={styles.leftColumn}>
           <div className={styles.image} style={{ backgroundImage: `url(https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)` }} >
