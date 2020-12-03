@@ -14,6 +14,13 @@
   font-weight: bold;
 }
 
+.sublabel {
+  color: #B9B5AE;
+  font-size: large;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
 .apartmentWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
