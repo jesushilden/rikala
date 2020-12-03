@@ -15,7 +15,7 @@
 }
 
 .sublabel {
-  color: #B9B5AE;
+  color:#baa88a;
   font-size: large;
   margin-bottom: 25px;
   text-align: center;
@@ -29,7 +29,7 @@
 
 .apartmentInfo {
   position: relative;
-  background: #B9B5AE;
+  background: #baa88a;
   color: white;
   padding: 10px;
 }
