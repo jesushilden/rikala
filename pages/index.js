@@ -8,6 +8,7 @@ import Contact from '../components/Contact/Contact'
 import Stories from '../components//Stories/Stories'
 import contentfulService from '../utils/contentfulService'
 import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
 
 export default function Home(props) {
   console.log(props)
@@ -38,6 +39,9 @@ export default function Home(props) {
           </div>
           <div className={styles.contentBlock}>
             <Contact />
+          </div>
+          <div className={`${styles.contentBlock} ${styles.contentBlockDarkBlue}`}>
+            <Footer info={props.info}/>
           </div>
         </div>
       </main>

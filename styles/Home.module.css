@@ -30,5 +30,9 @@
     background-color: #EFEFEF;
 }
 
+.contentBlockDarkBlue {
+    background-color: #24293A;
+}
+
 @media (max-width: 1024px) {
 }
