@@ -5,8 +5,9 @@
 }
 
 .logo {
-  height: 210px;
-  width: 210px;
+  height: 100px;
+  margin: 40px;
+  object-fit: cover;
 }
 
 .info {
