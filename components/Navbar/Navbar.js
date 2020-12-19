@@ -4,7 +4,7 @@ import { useState } from 'react'
 import styles from '../../styles/Navbar.module.css'
 import Slider from './Slider'
 
-const Navbar = ({ logo }) => {
+const Navbar = ({ logo, info }) => {
     const [open, setOpen] = useState(false)
 
     return (
@@ -23,7 +23,7 @@ const Navbar = ({ logo }) => {
                     <FontAwesomeIcon icon={faBars} />
                 }
             </div>
-            <Slider open={open} setOpen={setOpen}/>
+            <Slider open={open} setOpen={setOpen} info={info}/>
         </div>
     )
 }

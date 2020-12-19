@@ -20,7 +20,7 @@ export default function Home(props) {
       </Head>
 
       <main className={styles.main}>
-        <Navbar logo={props.info.logo}/>
+        <Navbar logo={props.info.logo} info={props.info}/>
         <div className={styles.page}>
           <div className={styles.contentBlock}>
             <Header header={props.header} />
