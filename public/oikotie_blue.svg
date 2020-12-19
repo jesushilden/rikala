@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Assets/App Icon/iTunesArtwork</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="100.00025%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="51.3194014%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="100.00025%" x2="0%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#24293A" offset="0%"></stop>
+            <stop stop-color="#24293A" offset="51.3194014%"></stop>
+            <stop stop-color="#24293A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets/App-Icon/iTunesArtwork">
+            <g id="Icon">
+                <path d="M390,9.03625001e-15 C464,9.03625001e-15 512,48 512,122 L512,390 C512,464 464,512 390,512 L122,512 C48,512 0,464 0,390 L0,122 C0,48 48,9.03625005e-15 122,9.03625005e-15 L390,9.03625001e-15 Z" id="App-Icon-Shape" fill="url(#linearGradient-1)"></path>
+                <path d="M388,34 L247.894327,34 L34,255.99978 L247.894327,477.99956 L388,478 C437.705627,478.000095 478.000077,437.705799 478.000172,388.000172 C478.000172,388.000115 478.000172,388.000057 478.000172,388 L478,124 C478,74.2943725 437.705627,34 388,34 Z" id="Rectangle-2-Copy" fill="url(#linearGradient-2)" transform="translate(256.000000, 256.000000) rotate(-180.000000) translate(-256.000000, -256.000000) "></path>
+                <circle id="Oval-2-Copy-4" stroke="#FFFFFF" stroke-width="40" cx="217" cy="256" r="78"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
