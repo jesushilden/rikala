@@ -19,6 +19,15 @@
   font-size: x-large;
 }
 
+.someContainer {
+  font-size: x-large;
+  display: flex;
+}
+
+.someIcon {
+  margin-right: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     flex-direction: column-reverse;
@@ -27,5 +36,13 @@
 
   .info {
     text-align: center;
+  }
+
+  .someContainer {
+    justify-content: center;
+  }
+
+  .someIcon {
+    margin: 5px;
   }
 }
