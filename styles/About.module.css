@@ -15,13 +15,41 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px;
     min-height: 40vh;
+}
+
+.badge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #BAA88A;
+    border-radius: 50%;
+    height: 115px;
+    width: 115px;
+    background: #24293A;
+    margin-bottom: -10px;
+}
+
+.soldAmount {
+    font-size: xx-large;
+    color: #BAA88A;
+}
+
+.soldText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: smaller;
 }
 
 .imageBorder {

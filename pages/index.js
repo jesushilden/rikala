@@ -11,7 +11,6 @@ import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 
 export default function Home(props) {
-  console.log(props)
   return (
     <div className={styles.container}>
       <Head>
@@ -29,10 +28,10 @@ export default function Home(props) {
             <Process process={props.process}/>
           </div>
           <div className={`${styles.contentBlock} ${styles.contentBlockDark}`}>
-            <About about={props.about} />
+            <About about={props.about} soldAmount={props.info.soldAmount}/>
           </div>
           <div className={styles.contentBlock}>
-            <Sold apartments={props.apartments} soldAmount={props.info.soldAmount} />
+            <Sold apartments={props.apartments} />
           </div>
           <div className={`${styles.contentBlock} ${styles.contentBlockDark}`}>
             <Stories stories={props.stories} />
