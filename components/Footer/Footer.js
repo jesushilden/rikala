@@ -8,7 +8,7 @@ const Footer = ({ info }) => {
       <div className={styles.info}>
         <div className={styles.label}>{info.companyName}</div>
         <div>{info.companyAddress}</div>
-        <div>{info.companyWebpage}</div>
+        <div><a href={info.companyWebpage}>{info.companyWebpage}</a></div>
         <div>{info.companyId}</div>
       </div>
       <div className={styles.info}>
