@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Stories = ({ stories }) => {
   return <div className={styles.container}>
     <span className={styles.idAnchor} id="palaute"></span>
-    <div className={styles.label}>ASIAKASTARINAT</div>
+    <div className={styles.label}>ASIAKASPALAUTTEET</div>
     {stories.map(story =>
       <div className={styles.storyWrapper} key={story.name}>
         <FontAwesomeIcon className={styles.quoteIcon} icon={faQuoteLeft}/>
