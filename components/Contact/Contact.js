@@ -53,8 +53,15 @@ const Contact = () => {
     setSubmitting(true)
 
     try {
-      await fetch('/api/email', { method: 'POST', body: body })
-      setSubmitted(true)
+      const response = await fetch('/api/email', { method: 'POST', body: body })
+
+      if (response.status === 200) {
+        setSubmitted(true)
+      } else {
+        setGlobalError('Lomaketta ei voitu lähettää. Kokeile uudestaan tai ole suoraan yhteydessä.')
+        setSubmitting(false)
+      }
+      
     } catch (error) {
       setGlobalError('Lomaketta ei voitu lähettää. Tarkista internetyhteytesi.')
       setSubmitting(false)
