@@ -103,7 +103,7 @@ const Contact = () => {
   return <div className={styles.container}>
     <span className={styles.idAnchor} id="yhteystiedot"></span>
     <div className={styles.label}>OTA YHTEYTTÄ</div>
-    <div className={styles.sublabel}>Varaa arviokäynti. Kysy kohteesta. Vastaan kysymykseen kuin kysymykseen mahdollisimman pian.</div>
+    <div className={styles.sublabel}>Harkitsetko asunnon vaihtoa? Varaa ilmainen arviokäynti. Vastaan kysymykseen kuin kysymykseen mahdollisimman pian.</div>
     <div className={styles.inputWrapper}>
       <input className={`${styles.textInput} ${nameError ? styles.textInputError : ''}`} placeholder='Nimi*' value={name} onChange={handleNameChange}></input>
       <div className={styles.errorMessage}>{nameError}</div>
