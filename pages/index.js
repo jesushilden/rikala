@@ -15,7 +15,7 @@ export default function Home(props) {
     <div className={styles.container}>
       <Head>
         <title>Miko Rikala</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/MR_white.ico" />
       </Head>
 
       <main className={styles.main}>

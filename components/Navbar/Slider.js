@@ -1,4 +1,5 @@
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram, faFacebookF} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../../styles/Slider.module.css'
 
@@ -19,6 +20,14 @@ const Slider = ({ open, setOpen, info }) => {
                 </a>
             </div>
             <div className={styles.contactInformation}>
+                <div className={styles.someButtons}>
+                    <a href={info.instagram} target="_blank" className={styles.someIcon}>
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                    <a href={info.facebook} target="_blank" className={styles.someIcon}>
+                        <FontAwesomeIcon icon={faFacebookF} />
+                    </a>
+                </div>
                 <div className={styles.information}>
                     <FontAwesomeIcon icon={faPhone} />
                     <div className={styles.informationText}>{info.phone}</div>

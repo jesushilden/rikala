@@ -7,8 +7,8 @@ const Stories = ({ stories }) => {
   return <div className={styles.container}>
     <span className={styles.idAnchor} id="palaute"></span>
     <div className={styles.label}>ASIAKASPALAUTTEET</div>
-    {stories.map(story =>
-      <div className={styles.storyWrapper} key={story.name}>
+    {stories.map((story, i) =>
+      <div className={styles.storyWrapper} key={i}>
         <FontAwesomeIcon className={styles.quoteIcon} icon={faQuoteLeft}/>
         <div className={styles.story} dangerouslySetInnerHTML={{ __html: documentToHtmlString(story.story)}}></div>
         <div className={styles.name}>{story.name}</div>
