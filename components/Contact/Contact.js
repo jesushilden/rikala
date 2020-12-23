@@ -53,8 +53,15 @@ const Contact = () => {
     setSubmitting(true)
 
     try {
-      await fetch('/api/email', { method: 'POST', body: body })
-      setSubmitted(true)
+      const response = await fetch('/api/email', { method: 'POST', body: body })
+
+      if (response.status === 200) {
+        setSubmitted(true)
+      } else {
+        setGlobalError('Lomaketta ei voitu lähettää. Kokeile uudestaan tai ole suoraan yhteydessä.')
+        setSubmitting(false)
+      }
+      
     } catch (error) {
       setGlobalError('Lomaketta ei voitu lähettää. Tarkista internetyhteytesi.')
       setSubmitting(false)
@@ -96,7 +103,7 @@ const Contact = () => {
   return <div className={styles.container}>
     <span className={styles.idAnchor} id="yhteystiedot"></span>
     <div className={styles.label}>OTA YHTEYTTÄ</div>
-    <div className={styles.sublabel}>Varaa arviokäynti. Kysy kohteesta. Vastaan kysymykseen kuin kysymykseen mahdollisimman pian.</div>
+    <div className={styles.sublabel}>Harkitsetko asunnon vaihtoa? Varaa ilmainen arviokäynti.</div>
     <div className={styles.inputWrapper}>
       <input className={`${styles.textInput} ${nameError ? styles.textInputError : ''}`} placeholder='Nimi*' value={name} onChange={handleNameChange}></input>
       <div className={styles.errorMessage}>{nameError}</div>

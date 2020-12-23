@@ -15,7 +15,14 @@ export default function Home(props) {
     <div className={styles.container}>
       <Head>
         <title>Miko Rikala</title>
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Miko Rikala toimii kiinteistönvälittäjänä pääsääntöisesti Espoon alueella. Aluetuntemusta minulla on Espoon lisäksi myös Kauniaisissa, Kirkkonummella, Vantaalla ja Helsingin keskustassa sekä Lauttasaaressa. Harkitsetko asunnon vaihtoa? Varaa ilmainen arviokäynti."></meta>
+        <meta name="keywords" content="Miko Rikala, Kiinteistönvälitys, kiinteistönvälittäjä, asunnon myynti, kiinteistövälittäjä espoo, kiinteistövälittäjä helsinki"></meta>
+        <meta property="og:title" content="Miko Rikala"></meta>
+        <meta property="og:description" content="Miko Rikala toimii kiinteistönvälittäjänä pääsääntöisesti Espoon alueella. Aluetuntemusta minulla on Espoon lisäksi myös Kauniaisissa, Kirkkonummella, Vantaalla ja Helsingin keskustassa sekä Lauttasaaressa. Harkitsetko asunnon vaihtoa? Varaa ilmainen arviokäynti."></meta>
+        <meta property="og:image" content={props.about.picture}></meta>
+        <meta property="og:url" content="https://www.mikorikala.fi/"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <link rel="icon" href="/MR_white.ico" />
       </Head>
 
       <main className={styles.main}>

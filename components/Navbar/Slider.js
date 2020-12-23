@@ -1,4 +1,5 @@
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram, faFacebookF} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../../styles/Slider.module.css'
 
@@ -10,7 +11,7 @@ const Slider = ({ open, setOpen, info }) => {
         <div className={styles.container} style={{ left: isOpen() }}>
             <div className={styles.navigationList}>
                 <a href={`#kuka`} onClick={() => setOpen(false)}><div className={styles.listItem}>Minusta</div></a>
-                <a href={`#myydyt`} onClick={() => setOpen(false)}><div className={styles.listItem}>Myydyt</div></a>
+                <a href={`#myydyt`} onClick={() => setOpen(false)}><div className={styles.listItem}>Myytyjä</div></a>
                 <a href={`#palaute`} onClick={() => setOpen(false)}><div className={styles.listItem}>Asiakaskokemukset</div></a>
                 <a href={`#yhteystiedot`} onClick={() => setOpen(false)}><div className={styles.listItem}>Ota yhteyttä</div></a>
                 <a className={`${styles.listItem} ${styles.oikotieButton}`} href="https://asunnot.oikotie.fi/yritys/roof-group-helsinki/miko-rikala-15811780" target="_blank">
@@ -19,6 +20,14 @@ const Slider = ({ open, setOpen, info }) => {
                 </a>
             </div>
             <div className={styles.contactInformation}>
+                {/*<div className={styles.someButtons}>
+                    <a href={info.instagram} target="_blank" className={styles.someIcon}>
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                    <a href={info.facebook} target="_blank" className={styles.someIcon}>
+                        <FontAwesomeIcon icon={faFacebookF} />
+                    </a>
+                </div>*/}
                 <div className={styles.information}>
                     <FontAwesomeIcon icon={faPhone} />
                     <div className={styles.informationText}>{info.phone}</div>
