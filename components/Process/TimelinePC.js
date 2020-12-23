@@ -1,5 +1,5 @@
 import styles from '../../styles/TimelinePC.module.css'
-import { faChartBar, faPhotoVideo, faSignature, faTrophy, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faChartBar, faPhotoVideo, faSignature, faTrophy, faUsers, faHome } from '@fortawesome/free-solid-svg-icons'
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect } from 'react'
@@ -109,7 +109,7 @@ const TimelinePC = ({ process }) => {
         </div>
         <div className={styles.centerEndColumn}>
           <div className={styles.line}></div>
-          <div className={styles.circle}><FontAwesomeIcon icon={faTrophy} /></div>
+          <div className={styles.circle}><FontAwesomeIcon icon={faHome} /></div>
         </div>
         <div className={styles.rightColumn}>
         </div>

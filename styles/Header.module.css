@@ -29,7 +29,7 @@
 
 .title {
     color: #BAA88A;
-    font-size: xxx-large;
+    font-size: 48px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -71,6 +71,8 @@
         text-align: center;
         background: none;
         margin-top: 0px;
+        font-size: 48px;
+        margin-bottom: 0px;
         color: #24293A;
     }
 
