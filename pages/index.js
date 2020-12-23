@@ -35,7 +35,7 @@ export default function Home(props) {
             <Process process={props.process}/>
           </div>
           <div className={`${styles.contentBlock} ${styles.contentBlockDark}`}>
-            <About about={props.about} soldAmount={props.info.soldAmount}/>
+            <About about={props.about} soldAmount={props.info.soldAmount} soldAmountYear={props.info.soldAmountYear}/>
           </div>
           <div className={styles.contentBlock}>
             <Sold apartments={props.apartments} />

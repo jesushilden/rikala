@@ -1,7 +1,7 @@
 import styles from '../../styles/About.module.css'
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 
-const About = ({ about, soldAmount }) => {
+const About = ({ about, soldAmount, soldAmountYear }) => {
 
   const getTodayString = () => {
     const date = new Date()
@@ -21,6 +21,7 @@ const About = ({ about, soldAmount }) => {
           <div className={styles.badge}>
           <div className={styles.soldAmount}>{soldAmount}</div>
             <div className={styles.soldText}>myytyä kohdetta</div>
+            <div className={styles.soldText}>{soldAmountYear}</div>
           </div>
         </div>
         <div className={styles.presentation}>
