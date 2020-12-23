@@ -4,10 +4,10 @@ const Sold = ({ apartments, soldAmount }) => {
 
   return <div className={styles.container}>
     <span className={styles.idAnchor} id="myydyt"></span>
-    <div className={styles.label}>MYYDYT KOHTEET</div>
+    <div className={styles.label}>MYYTYJÄ KOHTEITA</div>
     <div className={styles.apartmentWrapper}>
-      {apartments.map(apartment =>
-        <div className={styles.apartment} key={apartment.address}>
+      {apartments.map((apartment, index) =>
+        <div className={styles.apartment} key={index}>
           <img className={styles.image} src={apartment.picture}></img>
           <div className={styles.apartmentInfo}>
             <div className={styles.address}>{apartment.address}</div>

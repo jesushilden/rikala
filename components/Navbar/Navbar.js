@@ -22,7 +22,7 @@ const Navbar = ({ logo, info }) => {
             <a href="#otsikko"><img className={styles.logo} src={logo}></img></a>
             <div className={styles.navigationList}>
                 <a href={`#kuka`}><div className={styles.listItem}>Kuka on Miko</div></a>
-                <a href={`#myydyt`}><div className={styles.listItem}>Myydyt</div></a>
+                <a href={`#myydyt`}><div className={styles.listItem}>Myytyjä</div></a>
                 <a href={`#palaute`}><div className={styles.listItem}>Palautteet</div></a>
                 <a href={`#yhteystiedot`}><div className={styles.listItem}>Ota yhteyttä</div></a>
                 <div className={`${styles.listItem} ${styles.someButtons}`}>
