@@ -6,7 +6,7 @@
 
 .node {
     display: flex;
-    min-height: 40vh;
+    min-height: 50vh;
 }
 
 .rightColumn {
