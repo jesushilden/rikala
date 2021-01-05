@@ -20,14 +20,6 @@ const Slider = ({ open, setOpen, info }) => {
                 </a>
             </div>
             <div className={styles.contactInformation}>
-                <div className={styles.someButtons}>
-                    <a href={info.instagram} target="_blank" className={styles.someIcon}>
-                        <FontAwesomeIcon icon={faInstagram} />
-                    </a>
-                    <a href={info.facebook} target="_blank" className={styles.someIcon}>
-                        <FontAwesomeIcon icon={faFacebookF} />
-                    </a>
-                </div>
                 <div className={styles.information}>
                     <FontAwesomeIcon icon={faPhone} />
                     <div className={styles.informationText}>{info.phone}</div>

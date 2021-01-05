@@ -37,11 +37,14 @@
 }
 
 .navigationButton {
-    display: none;
     font-size: 25px;
     margin: 0px 20px;
     cursor: pointer;
     color: white;
+}
+
+.navigationButtons {
+    display: none;
 }
 
 .oikotieButton {
@@ -85,7 +88,7 @@
         display: none;
     }
 
-    .navigationButton {
+    .navigationButtons {
         display: flex;
     }
 }

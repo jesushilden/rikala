@@ -1,5 +1,5 @@
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { faInstagram, faFacebookF} from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import styles from '../../styles/Navbar.module.css'
@@ -38,12 +38,22 @@ const Navbar = ({ logo, info }) => {
                     <div className={styles.oikotieText}>Myynnissä</div>
                 </a>
             </div>
-            <div className={styles.navigationButton} onClick={() => toggleSlider(!open)}>
-                {open ?
-                    <FontAwesomeIcon icon={faTimes} />
-                    :
-                    <FontAwesomeIcon icon={faBars} />
-                }
+            <div className={styles.navigationButtons}>
+                {open && <div className={styles.someButtons}>
+                    <a href={info.instagram} target="_blank" className={styles.someIcon}>
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                    <a href={info.facebook} target="_blank" className={styles.someIcon}>
+                        <FontAwesomeIcon icon={faFacebookF} />
+                    </a>
+                </div>}
+                <div className={styles.navigationButton} onClick={() => toggleSlider(!open)}>
+                    {open ?
+                        <FontAwesomeIcon icon={faTimes} />
+                        :
+                        <FontAwesomeIcon icon={faBars} />
+                    }
+                </div>
             </div>
             <Slider open={open} setOpen={toggleSlider} info={info} />
         </div>
