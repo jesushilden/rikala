@@ -9,6 +9,7 @@ const Header = ({ header }) => {
       <div className={styles.information}>
         <div className={styles.title}>{header.fields.name}</div>
         <div className={styles.text} dangerouslySetInnerHTML={{ __html: documentToHtmlString(header.fields.description) }}></div>
+        <div className={styles.textMobile} dangerouslySetInnerHTML={{ __html: documentToHtmlString(header.fields.descriptionMobile) }}></div>
       </div>
       <div className={styles.mikosSpace}>
       </div>

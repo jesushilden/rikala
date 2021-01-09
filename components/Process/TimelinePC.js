@@ -96,22 +96,16 @@ const TimelinePC = ({ process }) => {
           <div className={styles.title}>{getStepByOrder(4).fields.name}</div>
           <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(4).fields.description) }}></div>
         </div>
-        <div className={styles.centerColumn}>
-          <div className={styles.line}></div>
-          <div className={styles.circle}><FontAwesomeIcon icon={faSignature} /></div>
+        <div className={styles.centerEndColumn}>
+          <div className={styles.centerContent}>
+            <div className={styles.line}></div>
+            <div className={styles.endCircle}><FontAwesomeIcon icon={faSignature} /></div>
+          </div>
+          <div className={styles.centerEmpty}>
+          </div>
         </div>
         <div className={styles.rightColumn}>
           <div className={styles.image} style={{ backgroundImage: `url(https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)` }} ></div>
-        </div>
-      </div>
-      <div className={styles.endNode}>
-        <div className={styles.leftColumn}>
-        </div>
-        <div className={styles.centerEndColumn}>
-          <div className={styles.line}></div>
-          <div className={styles.circle}><FontAwesomeIcon icon={faHome} /></div>
-        </div>
-        <div className={styles.rightColumn}>
         </div>
       </div>
     </div>
