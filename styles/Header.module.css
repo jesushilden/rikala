@@ -81,6 +81,7 @@
     .text {
         background: none;
         color: #24293A;
+        color: transparent;
         flex: 1;
     }
 }
