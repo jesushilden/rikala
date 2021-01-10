@@ -22,6 +22,7 @@ export default function Home(props) {
         <meta property="og:image" content={props.about.picture}></meta>
         <meta property="og:url" content="https://www.mikorikala.fi/"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta name="google-site-verification" content="Avw38jTiFG68jb_viHt2IkvImJOEOXXI9thTvKv_ekY" />
         <link rel="icon" href="/MR_white.ico" />
       </Head>
 
