@@ -88,6 +88,7 @@
 .title {
     font-family: 'BebasNeue';
     font-size: x-large;
+    text-align: center;
 }
 
 .button {
@@ -128,6 +129,7 @@
 
 .centerEmpty {
     flex: 1;
+    margin-top: 20px;
 }
 
 .centerContent {
@@ -152,5 +154,5 @@
     border: 4px solid #C3CCDA;
     position: absolute;
     background: white;
-    margin-bottom: -40px;
+    margin-bottom: 0px;
 }

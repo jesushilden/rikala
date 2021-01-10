@@ -16,6 +16,7 @@ const TimelinePC = ({ process }) => {
     const nodePosition2 = document.getElementById("node2").offsetTop;
     const nodePosition3 = document.getElementById("node3").offsetTop;
     const nodePosition4 = document.getElementById("node4").offsetTop;
+    const nodePosition5 = document.getElementById("node5").offsetTop;
 
     if (window.pageYOffset + window.innerHeight > nodePosition1 + 200) {
       document.getElementById("node1").style.opacity = '1'
@@ -28,6 +29,9 @@ const TimelinePC = ({ process }) => {
     }
     if (window.pageYOffset + window.innerHeight > nodePosition4 + 200) {
       document.getElementById("node4").style.opacity = '1'
+    }
+    if (window.pageYOffset + window.innerHeight > nodePosition5 + 200) {
+      document.getElementById("node5").style.opacity = '1'
     }
   }
 
@@ -96,16 +100,28 @@ const TimelinePC = ({ process }) => {
           <div className={styles.title}>{getStepByOrder(4).fields.name}</div>
           <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(4).fields.description) }}></div>
         </div>
-        <div className={styles.centerEndColumn}>
-          <div className={styles.centerContent}>
-            <div className={styles.line}></div>
-            <div className={styles.endCircle}><FontAwesomeIcon icon={faSignature} /></div>
-          </div>
-          <div className={styles.centerEmpty}>
-          </div>
+        <div className={styles.centerColumn}>
+          <div className={styles.line}></div>
+          <div className={styles.circle}><FontAwesomeIcon icon={faSignature} /></div>
         </div>
         <div className={styles.rightColumn}>
           <div className={styles.image} style={{ backgroundImage: `url(https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)` }} ></div>
+        </div>
+      </div>
+      <div className={styles.node}>
+        <div className={`${styles.leftColumn} ${styles.textColumn}`}>
+        </div>
+        <div className={styles.centerEndColumn}>
+          <div className={styles.centerContent}>
+            <div className={styles.line}></div>
+            <div className={styles.endCircle}><FontAwesomeIcon icon={faHome} /></div>
+          </div>
+          <div className={`${styles.centerEmpty} ${styles.textColumn}`} id="node5">
+            <div className={styles.title}>{getStepByOrder(5).fields.name}</div>
+            <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(5).fields.description) }}></div>
+          </div>
+        </div>
+        <div className={styles.rightColumn}>
         </div>
       </div>
     </div>
