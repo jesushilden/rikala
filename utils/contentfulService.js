@@ -14,7 +14,24 @@ const getEntrie = async (entrieId) => {
 
 const getProcessEntries = async () => {
     const entryList = await fetch(`https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?content_type=process&access_token=${token}`)
-    return await entryList.json()
+
+    const entryListJson = await entryList.json()
+
+    const nodes = entryListJson.items.map(entry => {
+        if (entry.fields.image) {
+            const asset = entryListJson.includes.Asset.find(asset => asset.sys.id === entry.fields.image.sys.id)
+            return {
+                ...entry.fields,
+                picture: asset.fields.file.url
+            }
+        } else {
+            return {
+                ...entry.fields
+            }
+        }
+    })
+
+    return nodes
 }
 
 const getApartmentEntries = async () => {
