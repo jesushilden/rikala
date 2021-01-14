@@ -57,8 +57,7 @@ const TimelinePC = ({ process }) => {
       </div>
       <div className={styles.node}>
         <div className={styles.leftColumn}>
-          <div className={styles.image} style={{ backgroundImage: `url(${getStepByOrder(1).picture})` }} >
-          </div>
+          <img className={styles.image} src={getStepByOrder(1).picture} />
         </div>
         <div className={styles.centerColumn}>
           <div className={styles.line}></div>
@@ -79,12 +78,12 @@ const TimelinePC = ({ process }) => {
           <div className={styles.circle}><FontAwesomeIcon icon={faChartBar} /></div>
         </div>
         <div className={styles.rightColumn}>
-          <div className={styles.image} style={{ backgroundImage: `url(${getStepByOrder(2).picture})` }} ></div>
+        <img className={styles.image} src={getStepByOrder(2).picture} />
         </div>
       </div>
       <div className={styles.node}>
         <div className={styles.leftColumn}>
-          <div className={styles.image} style={{ backgroundImage: `url(${getStepByOrder(3).picture})` }} ></div>
+        <img className={styles.image} src={getStepByOrder(3).picture} />
         </div>
         <div className={styles.centerColumn}>
           <div className={styles.line}></div>
@@ -105,7 +104,7 @@ const TimelinePC = ({ process }) => {
           <div className={styles.circle}><FontAwesomeIcon icon={faSignature} /></div>
         </div>
         <div className={styles.rightColumn}>
-          <div className={styles.image} style={{ backgroundImage: `url(${getStepByOrder(4).picture})` }} ></div>
+        <img className={styles.image} src={getStepByOrder(4).picture} />
         </div>
       </div>
       <div className={styles.node}>
