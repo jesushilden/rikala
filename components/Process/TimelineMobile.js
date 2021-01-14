@@ -36,7 +36,7 @@ const TimelineMobile = ({ process }) => {
   }
 
   const getStepByOrder = (order) => {
-    return process.items.find(item => item.fields.order === order)
+    return process.find(item => item.order === order)
   }
 
   return (
@@ -52,8 +52,8 @@ const TimelineMobile = ({ process }) => {
           <div className={styles.circle}><FontAwesomeIcon icon={faPhotoVideo} /></div>
         </div>
         <div className={`${styles.rightColumn} ${styles.textColumn}`} id="node1">
-          <div className={styles.title}>{getStepByOrder(1).fields.name}</div>
-          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(1).fields.description) }}></div>
+          <div className={styles.title}>{getStepByOrder(1).name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(1).description) }}></div>
         </div>
       </div>
       <div className={styles.node}>
@@ -62,8 +62,8 @@ const TimelineMobile = ({ process }) => {
           <div className={styles.circle}><FontAwesomeIcon icon={faChartBar} /></div>
         </div>
         <div className={`${styles.rightColumn} ${styles.textColumn}`} id="node2">
-          <div className={styles.title}>{getStepByOrder(2).fields.name}</div>
-          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(2).fields.description) }}></div>
+          <div className={styles.title}>{getStepByOrder(2).name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(2).description) }}></div>
         </div>
       </div>
       <div className={styles.node}>
@@ -72,8 +72,8 @@ const TimelineMobile = ({ process }) => {
           <div className={styles.circle}><FontAwesomeIcon icon={faUsers} /></div>
         </div>
         <div className={`${styles.rightColumn} ${styles.textColumn}`} id="node3">
-          <div className={styles.title}>{getStepByOrder(3).fields.name}</div>
-          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(3).fields.description) }}></div>
+          <div className={styles.title}>{getStepByOrder(3).name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(3).description) }}></div>
         </div>
       </div>
       <div className={styles.node}>
@@ -82,8 +82,8 @@ const TimelineMobile = ({ process }) => {
           <div className={styles.circle}><FontAwesomeIcon icon={faUsers} /></div>
         </div>
         <div className={`${styles.rightColumn} ${styles.textColumn}`} id="node4">
-          <div className={styles.title}>{getStepByOrder(4).fields.name}</div>
-          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(4).fields.description) }}></div>
+          <div className={styles.title}>{getStepByOrder(4).name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(4).description) }}></div>
         </div>
       </div>
       <div className={styles.endNode}>
@@ -96,8 +96,8 @@ const TimelineMobile = ({ process }) => {
           </div>
         </div>
         <div className={`${styles.rightEndColumn} ${styles.textColumn}`} id="node5">
-        <div className={styles.title}>{getStepByOrder(5).fields.name}</div>
-          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(5).fields.description) }}></div>
+        <div className={styles.title}>{getStepByOrder(5).name}</div>
+          <div className={styles.info} dangerouslySetInnerHTML={{ __html: documentToHtmlString(getStepByOrder(5).description) }}></div>
         </div>
       </div>
     </div>
