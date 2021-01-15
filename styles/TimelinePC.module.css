@@ -74,9 +74,7 @@
 .image {
     width: 400px;
     height: 30vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
 }
 
 .info {
