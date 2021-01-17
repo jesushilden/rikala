@@ -20,14 +20,14 @@ const Slider = ({ open, setOpen, info }) => {
                 </a>
             </div>
             <div className={styles.contactInformation}>
-                <div className={styles.information}>
+                <a href={"tel:" + info.phone} className={styles.information}>
                     <FontAwesomeIcon icon={faPhone} />
                     <div className={styles.informationText}>{info.phone}</div>
-                </div>
-                <div className={styles.information}>
+                </a>
+                <a  href={"mailto:" + info.email} className={styles.information}>
                     <FontAwesomeIcon icon={faEnvelope} />
                     <div className={styles.informationText}>{info.email}</div>
-                </div>
+                </a>
             </div>
         </div>
     )

@@ -15,8 +15,8 @@ const Footer = ({ info }) => {
       </div>
       <div className={styles.info}>
         <div className={styles.label}>Miko Rikala</div>
-        <div>{info.phone}</div>
-        <div>{info.email}</div>
+        <div><a href={"tel:" + info.phone} >{info.phone}</a></div>
+        <div><a href={"mailto:" + info.email} >{info.email}</a></div>
         <div className={styles.someContainer}>
           <a href={info.instagram} target="_blank">
             <FontAwesomeIcon icon={faInstagram} className={styles.someIcon} />
