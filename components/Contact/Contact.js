@@ -113,7 +113,7 @@ const Contact = () => {
       <div className={styles.errorMessage}>{phoneError}</div>
     </div>
     <div className={styles.inputWrapper}>
-      <input className={`${styles.textInput} ${emailError ? styles.textInputError : ''}`} placeholder='Sähköposti*' value={email} onChange={handleEmailChange}></input>
+      <input className={`${styles.textInput} ${emailError ? styles.textInputError : ''}`} placeholder='Sähköposti*' inputMode={'email'} value={email} onChange={handleEmailChange}></input>
       <div className={styles.errorMessage}>{emailError}</div>
     </div>
     <div className={styles.inputWrapper}>
