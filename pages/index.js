@@ -14,29 +14,30 @@ export default function Home(props) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Miko Rikala</title>
+        <title>Miko Rikala - Kiinteistönvälitys</title>
         <meta name="description" content="Miko Rikala toimii kiinteistönvälittäjänä pääsääntöisesti Espoon alueella. Aluetuntemusta minulla on Espoon lisäksi myös Kauniaisissa, Kirkkonummella, Vantaalla ja Helsingin keskustassa sekä Lauttasaaressa. Harkitsetko asunnon vaihtoa? Varaa ilmainen arviokäynti."></meta>
-        <meta name="keywords" content="Miko Rikala, Kiinteistönvälitys, kiinteistönvälittäjä, asunnon myynti, kiinteistövälittäjä espoo, kiinteistövälittäjä helsinki"></meta>
+        <meta name="keywords" content="Miko Rikala, Kiinteistönvälitys, kiinteistönvälittäjä, vuokravälitys, asunnon myynti, kiinteistövälittäjä espoo, kiinteistövälittäjä helsinki"></meta>
         <meta property="og:title" content="Miko Rikala"></meta>
         <meta property="og:description" content="Miko Rikala toimii kiinteistönvälittäjänä pääsääntöisesti Espoon alueella. Aluetuntemusta minulla on Espoon lisäksi myös Kauniaisissa, Kirkkonummella, Vantaalla ja Helsingin keskustassa sekä Lauttasaaressa. Harkitsetko asunnon vaihtoa? Varaa ilmainen arviokäynti."></meta>
-        <meta property="og:image" content={props.about.picture}></meta>
+        <meta property="og:image" content={props.header.picture}></meta>
         <meta property="og:url" content="https://www.mikorikala.fi/"></meta>
+        <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <meta name="google-site-verification" content="Avw38jTiFG68jb_viHt2IkvImJOEOXXI9thTvKv_ekY" />
         <link rel="icon" href="/MR_white.ico" />
       </Head>
 
       <main className={styles.main}>
-        <Navbar logo={props.info.logo} info={props.info}/>
+        <Navbar logo={props.info.logo} info={props.info} />
         <div className={styles.page}>
           <div className={styles.contentBlock}>
             <Header header={props.header} />
           </div>
-          <div className={styles.contentBlock}> 
-            <Process process={props.process}/>
+          <div className={styles.contentBlock}>
+            <Process process={props.process} />
           </div>
           <div className={`${styles.contentBlock} ${styles.contentBlockDark}`}>
-            <About about={props.about} soldAmount={props.info.soldAmount} soldAmountYear={props.info.soldAmountYear}/>
+            <About about={props.about} soldAmount={props.info.soldAmount} soldAmountYear={props.info.soldAmountYear} />
           </div>
           <div className={styles.contentBlock}>
             <Sold apartments={props.apartments} />
@@ -48,13 +49,10 @@ export default function Home(props) {
             <Contact />
           </div>
           <div className={`${styles.contentBlock} ${styles.contentBlockDarkBlue}`}>
-            <Footer info={props.info}/>
+            <Footer info={props.info} />
           </div>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-      </footer>
     </div>
   )
 }
@@ -75,11 +73,11 @@ export const getStaticProps = async () => {
   return {
     props: {
       header: { ...header, picture: headerPicture },
-      about: {...about, picture: aboutPicture},
+      about: { ...about, picture: aboutPicture },
       process: process,
       apartments: apartments,
       stories: stories,
-      info: {...info.fields, logo: logoUrl }
+      info: { ...info.fields, logo: logoUrl }
     },
   }
 }
