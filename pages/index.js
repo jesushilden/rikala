@@ -17,7 +17,7 @@ export default function Home(props) {
         <title>Miko Rikala - Kiinteistönvälitys</title>
         <meta name="description" content="Miko Rikala toimii kiinteistönvälittäjänä pääsääntöisesti Espoon alueella. Aluetuntemusta minulla on Espoon lisäksi myös Kauniaisissa, Kirkkonummella, Vantaalla ja Helsingin keskustassa sekä Lauttasaaressa. Harkitsetko asunnon vaihtoa? Varaa ilmainen arviokäynti."></meta>
         <meta name="keywords" content="Miko Rikala, Kiinteistönvälitys, kiinteistönvälittäjä, vuokravälitys, asunnon myynti, kiinteistövälittäjä espoo, kiinteistövälittäjä helsinki"></meta>
-        <meta property="og:title" content="Miko Rikala"></meta>
+        <meta property="og:title" content="Miko Rikala - Kiinteistönvälitys"></meta>
         <meta property="og:description" content="Miko Rikala toimii kiinteistönvälittäjänä pääsääntöisesti Espoon alueella. Aluetuntemusta minulla on Espoon lisäksi myös Kauniaisissa, Kirkkonummella, Vantaalla ja Helsingin keskustassa sekä Lauttasaaressa. Harkitsetko asunnon vaihtoa? Varaa ilmainen arviokäynti."></meta>
         <meta property="og:image" content={props.header.picture}></meta>
         <meta property="og:url" content="https://www.mikorikala.fi/"></meta>
