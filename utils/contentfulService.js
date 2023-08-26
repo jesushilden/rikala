@@ -4,7 +4,7 @@ const spaceId = process.env.SPACEID
 const getAssetUrl = async (assetId) => {
     const pictureData = await fetch(`https://cdn.contentful.com/spaces/${spaceId}/environments/master/assets/${assetId}?access_token=${token}`)
     const pictureJson = await pictureData.json()
-    return pictureJson.fields.file.url
+    return 'https:' + pictureJson.fields.file.url
 }
 
 const getEntrie = async (entrieId) => {

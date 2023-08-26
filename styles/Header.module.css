@@ -2,11 +2,9 @@
     height: 90vh;
     display: flex;
     flex: 1;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 10px;
     margin-top: 70px;
+    position: relative;
 }
 
 .idAnchor {
