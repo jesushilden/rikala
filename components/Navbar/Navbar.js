@@ -33,7 +33,7 @@ const Navbar = ({ logo, info }) => {
                         <FontAwesomeIcon icon={faFacebookF} />
                     </a>
                 </div>
-                <a className={`${styles.listItem} ${styles.oikotieButton}`} href="https://asunnot.oikotie.fi/yritys/roof-group-helsinki/miko-rikala-15811780" target="_blank">
+                <a className={`${styles.listItem} ${styles.oikotieButton}`} href="https://asunnot.oikotie.fi/yritys/roof-lkv/miko-rikala-16410180" target="_blank">
                     <img className={styles.oikotieLogo} src="oikotie.svg"></img>
                     <div className={styles.oikotieText}>Myynnissä</div>
                 </a>
