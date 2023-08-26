@@ -121,9 +121,9 @@ const Contact = () => {
       <div className={styles.errorMessage}>{messageError}</div>
     </div>
     <div className={styles.inputWrapper}>
-      <div className={styles.submitButton} onClick={submit}>
+      <button className={styles.submitButton} onClick={submit}>
         {submitting ? <FontAwesomeIcon icon={faCircleNotch} spin /> : 'Lähetä'}
-      </div>
+      </button>
       <div className={styles.errorMessage}>{globalError}</div>
     </div>
 

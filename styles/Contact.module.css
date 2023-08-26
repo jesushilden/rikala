@@ -68,6 +68,7 @@
     vertical-align: middle;
     line-height: 60px;
     cursor: pointer;
+    border: none;
 }
 
 .idAnchor {

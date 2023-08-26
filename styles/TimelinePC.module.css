@@ -71,10 +71,6 @@
     background: white;
 }
 
-.circle > svg {
-    height: 40px;
-}
-
 .image {
     width: 400px;
     height: 30vh;
@@ -157,8 +153,4 @@
     position: absolute;
     background: white;
     margin-bottom: 0px;
-}
-
-.endCircle > svg {
-    height: 40px;
 }
