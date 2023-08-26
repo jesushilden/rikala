@@ -52,6 +52,10 @@
     background: white;
 }
 
+.circle > svg {
+    height: 40px;
+}
+
 .info {
     max-width: 500px;
     margin: 0px 5px 0px 15px;
@@ -119,6 +123,10 @@
     position: absolute;
     background: white;
     margin-bottom: -40px;
+}
+
+.endCircle > svg {
+    height: 40px;
 }
 
 .centerEndEmpty {
