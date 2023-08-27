@@ -1,4 +1,5 @@
 import styles from '../../styles/Sold.module.css'
+import Image from "next/image";
 
 const Sold = ({ apartments, soldAmount }) => {
 
@@ -8,7 +9,7 @@ const Sold = ({ apartments, soldAmount }) => {
     <div className={styles.apartmentWrapper}>
       {apartments.map((apartment, index) =>
         <div className={styles.apartment} key={index}>
-          <img className={styles.image} src={apartment.picture}></img>
+          <Image className={styles.image} width={600} height={300} src={"https:" + apartment.picture} />
           <div className={styles.apartmentInfo}>
             <div className={styles.address}>{apartment.address}</div>
             <div className={styles.size}>{apartment.size} m<sup className={styles.powerof}>2</sup></div>

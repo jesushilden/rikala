@@ -52,29 +52,12 @@
   margin-top: -100px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
   .apartmentWrapper {
     grid-template-columns: 1fr;
   }
-
-  .image {
-    height: 400px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
   .container {
     padding: 5vh 0px;
     margin: 0px 10px;
-  }
-
-  .image {
-    height: 300px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .image {
-    height: 200px;
   }
 }
