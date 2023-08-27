@@ -1,25 +1,18 @@
 import styles from '../../styles/About.module.css'
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
+import Image from "next/image";
 
 const About = ({ about, soldAmount, soldAmountYear }) => {
-
-  const getTodayString = () => {
-    const date = new Date()
-    const year = date.getFullYear()
-    const month = date.getMonth() + 1
-    const day = date.getDate()
-
-    return day + '.' + month + '.' + year
-  }
 
   return (
     <div className={styles.container}>
       <span className={styles.idAnchor} id="kuka"></span>
       <div className={styles.title}>{about.fields.title}</div>
       <div className={styles.content}>
-        <div className={styles.picture} style={{ backgroundImage: `url(${about.picture})` }}>
+        <div className={styles.pictureWrapper}>
+          <Image className={styles.image} src={about.picture} alt="Kuva mikosta" width={600} height={600} />
           <div className={styles.badge}>
-          <div className={styles.soldAmount}>{soldAmount}</div>
+            <div className={styles.soldAmount}>{soldAmount}</div>
             <div className={styles.soldText}>myytyä kohdetta</div>
             <div className={styles.soldText}>{soldAmountYear}</div>
           </div>

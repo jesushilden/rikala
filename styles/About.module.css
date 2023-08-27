@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0vh 15vw;
+    margin: 0 15px;
     padding: 10vh 0px;
 }
 
@@ -11,20 +11,20 @@
     display: flex;
 }
 
-.picture {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+.pictureWrapper {
     margin: 10px;
-    min-height: 40vh;
+    position: relative;
+}
+
+.image {
+    position: relative;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
 }
 
 .badge {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,6 +35,8 @@
     width: 115px;
     background: #24293A;
     margin-bottom: -10px;
+    bottom: 0;
+    right: 0;
 }
 
 .soldAmount {
@@ -69,6 +71,7 @@
     align-items: center;
     margin: 20px;
     padding: 20px;
+    max-width: 500px;
 }
 
 .title {
@@ -89,15 +92,14 @@
       padding: 5vh 0px;
       margin: 0px 10px;
     }
-  }
 
-@media only screen and (max-width: 600px) {
     .content {
         flex-direction: column;
     }
 
-    .picture {
+    .image {
         margin: 0px;
+        height: 400px;
     }
 
     .presentation {
@@ -105,4 +107,4 @@
         margin: 15px 0px;
         text-align: center;
     }
-}
+  }
