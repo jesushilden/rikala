@@ -6,12 +6,12 @@
 
 .node {
     display: flex;
-    min-height: 40vh;
+    min-height: 400px;
 }
 
 .startNode {
     display: flex;
-    min-height: 10vh;
+    min-height: 100px;
 }
 
 .rightColumn {
@@ -73,12 +73,12 @@
 
 .image {
     width: 400px;
-    height: 30vh;
+    height: 275px;
     object-fit: cover;
 }
 
 .info {
-    max-width: 500px;
+    width: 400px;
     color: #24293A;
     text-align: center;
 }

@@ -3,6 +3,7 @@ import { faChartBar, faPhotoVideo, faSignature, faTrophy, faUsers, faHome } from
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect } from 'react'
+import Image from "next/image";
 
 const TimelinePC = ({ process }) => {
 
@@ -57,7 +58,7 @@ const TimelinePC = ({ process }) => {
       </div>
       <div className={styles.node}>
         <div className={styles.leftColumn}>
-          <img className={styles.image} src={getStepByOrder(1).picture} />
+          <Image src={"https:" + getStepByOrder(1).picture} alt={`Kuva joka kuvailee: ${getStepByOrder(1).name}`} width={400} height={275} style={{objectFit: "cover"}} />
         </div>
         <div className={styles.centerColumn}>
           <div className={styles.line}></div>
@@ -78,12 +79,12 @@ const TimelinePC = ({ process }) => {
           <div className={styles.circle}><FontAwesomeIcon icon={faChartBar} /></div>
         </div>
         <div className={styles.rightColumn}>
-        <img className={styles.image} src={getStepByOrder(2).picture} />
+        <Image src={"https:" + getStepByOrder(2).picture} alt={`Kuva joka kuvailee: ${getStepByOrder(2).name}`} width={400} height={275} style={{objectFit: "cover"}} />
         </div>
       </div>
       <div className={styles.node}>
         <div className={styles.leftColumn}>
-        <img className={styles.image} src={getStepByOrder(3).picture} />
+        <Image src={"https:" + getStepByOrder(3).picture} alt={`Kuva joka kuvailee: ${getStepByOrder(3).name}`} width={400} height={275} style={{objectFit: "cover"}} />
         </div>
         <div className={styles.centerColumn}>
           <div className={styles.line}></div>
@@ -104,7 +105,7 @@ const TimelinePC = ({ process }) => {
           <div className={styles.circle}><FontAwesomeIcon icon={faSignature} /></div>
         </div>
         <div className={styles.rightColumn}>
-        <img className={styles.image} src={getStepByOrder(4).picture} />
+        <Image src={"https:" + getStepByOrder(4).picture} alt={`Kuva joka kuvailee: ${getStepByOrder(4).name}`} width={400} height={275} style={{objectFit: "cover"}} />
         </div>
       </div>
       <div className={styles.node}>

@@ -6,7 +6,7 @@
 
 .node {
     display: flex;
-    min-height: 50vh;
+    min-height: 350px;
 }
 
 .rightColumn {
@@ -85,7 +85,7 @@
 
 .endNode {
     display: flex;
-    min-height: 50vh;
+    min-height: 350px;
 }
 
 .centerEndColumn {
