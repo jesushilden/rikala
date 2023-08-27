@@ -41,10 +41,8 @@ const TimelineMobile = ({ process }) => {
 
   return (
     <div className={styles.container}>
-      <a href="#yhteystiedot">
-        <div className={styles.button}>
-          Varaa arviokäynti
-        </div>
+      <a className={styles.button} href="#yhteystiedot">
+        Varaa arviokäynti
       </a>
       <div className={styles.node}>
         <div className={styles.centerColumn}>
