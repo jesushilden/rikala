@@ -10,6 +10,7 @@ const Header = ({ header }) => {
         src={header.picture}
         alt="Miko Rikala kuvassa"
         style={{zIndex: -1, objectFit: "cover", objectPosition: "92%"}}
+        loading="eager"
         unoptimized
         fill
       />

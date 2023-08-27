@@ -1,12 +1,13 @@
 import styles from '../../styles/Footer.module.css'
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Image from "next/image";
 
 const Footer = ({ info }) => {
 
   return (
     <div className={styles.container}>
-      <img className={styles.logo} src={info.logo}></img>
+      <Image className={styles.logo} src={info.logo} alt="ROOF logo" height={100} width={185} />
       <div className={styles.info}>
         <div className={styles.label}>{info.companyName}</div>
         <div>{info.companyAddress}</div>

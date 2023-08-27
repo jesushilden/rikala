@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import styles from '../../styles/Navbar.module.css'
 import Slider from './Slider'
+import Image from "next/image";
 
 const Navbar = ({ logo, info }) => {
     const [open, setOpen] = useState(false)
@@ -19,7 +20,9 @@ const Navbar = ({ logo, info }) => {
 
     return (
         <div className={styles.container}>
-            <a href="#otsikko"><img className={styles.logo} src={logo}></img></a>
+            <a href="#otsikko">
+                <Image className={styles.logo} src={logo} alt="ROOF logo" loading="eager" height={50} width={93} />
+            </a>
             <div className={styles.navigationList}>
                 <a href={`#kuka`}><div className={styles.listItem}>Kuka on Miko</div></a>
                 <a href={`#myydyt`}><div className={styles.listItem}>Myytyjä</div></a>
