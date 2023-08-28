@@ -33,7 +33,7 @@
     border-radius: 50%;
     height: 115px;
     width: 115px;
-    background: #24293A;
+    background: #003848;
     margin-bottom: -10px;
     bottom: 0;
     right: 0;
@@ -75,7 +75,7 @@
 }
 
 .title {
-    color: #24293A;
+    color: #003848;
     font-size: xx-large;
     margin-bottom: 25px;
     font-weight: bold;

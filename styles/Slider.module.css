@@ -22,7 +22,7 @@
     font-size: x-large;
     margin: 25px 0px;
     cursor: pointer;
-    color: #24293A;
+    color: #003848;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -44,11 +44,11 @@
 
 .informationText {
     margin-left: 5px;
-    color: #24293A;
+    color: #003848;
 }
 
 .oikotieButton {
-    border: 1px solid #24293A;
+    border: 1px solid #003848;
     display: flex;
     padding: 10px;
     width: fit-content;

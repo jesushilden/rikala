@@ -10,9 +10,9 @@
             <stop stop-color="#FFFFFF" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="0%" y1="100.00025%" x2="0%" y2="0%" id="linearGradient-2">
-            <stop stop-color="#24293A" offset="0%"></stop>
-            <stop stop-color="#24293A" offset="51.3194014%"></stop>
-            <stop stop-color="#24293A" offset="100%"></stop>
+            <stop stop-color="#003848" offset="0%"></stop>
+            <stop stop-color="#003848" offset="51.3194014%"></stop>
+            <stop stop-color="#003848" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
