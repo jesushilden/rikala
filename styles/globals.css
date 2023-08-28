@@ -1,9 +1,19 @@
+@font-face {
+  font-family: 'Aventa-Regular';
+  src: local('Aventa-Regular'), url(../utils/fonts/Aventa-Regular.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Aventa-Bold';
+  src: local('Aventa-Bold'), url(../utils/fonts/Aventa-Bold.ttf) format('opentype');
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Aventa-Regular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 

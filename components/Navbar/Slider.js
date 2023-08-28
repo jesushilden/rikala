@@ -12,7 +12,7 @@ const Slider = ({ open, setOpen, info }) => {
             <div className={styles.navigationList}>
                 <a href={`#kuka`} onClick={() => setOpen(false)}><div className={styles.listItem}>Minusta</div></a>
                 <a href={`#myydyt`} onClick={() => setOpen(false)}><div className={styles.listItem}>Myytyjä</div></a>
-                <a href={`#palaute`} onClick={() => setOpen(false)}><div className={styles.listItem}>Asiakaskokemukset</div></a>
+                <a href={`#palaute`} onClick={() => setOpen(false)}><div className={styles.listItem}>Palautteet</div></a>
                 <a href={`#yhteystiedot`} onClick={() => setOpen(false)}><div className={styles.listItem}>Ota yhteyttä</div></a>
                 <a className={`${styles.listItem} ${styles.oikotieButton}`} href="https://asunnot.oikotie.fi/yritys/roof-lkv/miko-rikala-16410180" target="_blank">
                     <img className={styles.oikotieLogo} src="oikotie_blue.svg"></img>
