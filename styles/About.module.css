@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 4px solid #BAA88A;
+    border: 4px solid #A09074;
     border-radius: 50%;
     height: 115px;
     width: 115px;
@@ -41,7 +41,7 @@
 
 .soldAmount {
     font-size: xx-large;
-    color: #BAA88A;
+    color: #A09074;
 }
 
 .soldText {
