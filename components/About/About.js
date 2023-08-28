@@ -12,8 +12,7 @@ const About = ({ about, soldAmount, soldAmountYear }) => {
         <div className={styles.pictureWrapper}>
           <Image className={styles.image} src={about.picture} alt="Kuva mikosta" width={600} height={600} />
           <div className={styles.badge}>
-            <div className={styles.soldAmount}>{soldAmount}</div>
-            <div className={styles.soldText}>myytyä kohdetta</div>
+            <div className={styles.soldAmount}>{soldAmount}+</div>
             <div className={styles.soldText}>{soldAmountYear}</div>
           </div>
         </div>
