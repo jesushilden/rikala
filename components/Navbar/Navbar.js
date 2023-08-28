@@ -21,7 +21,7 @@ const Navbar = ({ logo, info }) => {
     return (
         <div className={styles.container}>
             <a href="#otsikko">
-                <Image className={styles.logo} src={logo} alt="ROOF logo" loading="eager" height={50} width={93} />
+                <Image className={styles.logo} src={logo} alt="ROOF logo" loading="eager" height={50} width={125} />
             </a>
             <div className={styles.navigationList}>
                 <a href={`#kuka`}><div className={styles.listItem}>Kuka on Miko</div></a>

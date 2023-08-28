@@ -7,7 +7,7 @@ const Footer = ({ info }) => {
 
   return (
     <div className={styles.container}>
-      <Image className={styles.logo} src={info.logo} alt="ROOF logo" height={100} width={185} />
+      <Image className={styles.logo} src={info.logo} alt="ROOF logo" height={100} width={250} />
       <div className={styles.info}>
         <div className={styles.label}>{info.companyName}</div>
         <div>{info.companyAddress}</div>
