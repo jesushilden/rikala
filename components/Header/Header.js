@@ -13,6 +13,7 @@ const Header = ({ header }) => {
         loading="eager"
         unoptimized
         fill
+        priority
       />
       <span className={styles.idAnchor} id="otsikko"></span>
       <div className={styles.information}>
